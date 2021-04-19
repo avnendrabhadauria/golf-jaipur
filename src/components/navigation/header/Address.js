@@ -1,38 +1,36 @@
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-  },
-  details: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  content: {
-    flex: '1 0 auto',
-  },
-  cover: {
-    width: 151,
-  },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-  playIcon: {
-    height: 38,
-    width: 38,
-  },
-}));
+// import { makeStyles } from '@material-ui/core/styles';
+
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     display: 'flex',
+//   },
+//   details: {
+//     display: 'flex',
+//     flexDirection: 'column',
+//   },
+//   content: {
+//     flex: '1 0 auto',
+//   },
+//   cover: {
+//     width: 151,
+//   },
+//   controls: {
+//     display: 'flex',
+//     alignItems: 'center',
+//     paddingLeft: theme.spacing(1),
+//     paddingBottom: theme.spacing(1),
+//   },
+//   playIcon: {
+//     height: 38,
+//     width: 38,
+//   },
+// }));
 
 function MediaControlCard({ childComponent, addressDetails }) {
-  const classes = useStyles();
-
   return (
     <div style={{ padding: '10px', display: 'flex', color: '#b7b7b7' }}>
       <div style={{ padding: '10px' }}>{childComponent}</div>
