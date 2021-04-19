@@ -1,17 +1,9 @@
-import {
-  Backdrop,
-  Button,
-  Divider,
-  Grid,
-  Paper,
-  makeStyles,
-} from '@material-ui/core';
+import { Backdrop, Button, Grid, makeStyles } from '@material-ui/core';
 
 import Address from './Address';
 import AppBa from '../AppBar';
 import React from 'react';
 import backgroudImage from '../../../assests/images/backgroudImage.jpg';
-import clsx from 'clsx';
 import logo from '../../../assests/images/logo1.jpg';
 
 const useStyles = makeStyles((theme) => ({
