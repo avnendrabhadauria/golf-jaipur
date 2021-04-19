@@ -14,9 +14,12 @@ const useStyles = makeStyles((theme) => ({
     height: '2px',
   },
   backdrop: {
-    opacity: '0.97 !important',
+    opacity: '0.6 !important',
     zIndex: 1000,
     position: 'absolute',
+    '&:hover': {
+      opacity: '0.97 !important',
+    },
   },
   allignSelf: {
     textAlign: 'center',
@@ -54,26 +57,38 @@ function Event({ backgroudImage, heading, date }) {
       >
         <div
           style={{
-            color: 'white',
-            'z-index': 2000,
-            width: '74%',
+            border: '2px solid white',
+            height: '90%',
+            width: '90%',
             display: 'flex',
-            'flex-direction': 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
+            'justify-content': 'center',
+            'align-items': 'center',
           }}
         >
-          <h2>{heading}</h2>
-          <Divider className={classes.divider} />
-          <p>{date}</p>
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.butonStyle}
-            // style={{ display: show ? 'block' : 'none' }}
+          <div
+            style={{
+              color: 'white',
+              'z-index': 2000,
+              width: '74%',
+              display: 'flex',
+              'flex-direction': 'column',
+              justifyContent: 'space-around',
+              alignItems: 'center',
+              height: '50%',
+            }}
           >
-            Learn More
-          </Button>
+            <h2>{heading}</h2>
+            <Divider className={classes.divider} />
+            <p>{date}</p>
+            <Button
+              color="primary"
+              variant="contained"
+              className={classes.butonStyle}
+              // style={{ display: show ? 'block' : 'none' }}
+            >
+              Learn More
+            </Button>
+          </div>
         </div>
       </Backdrop>
     </div>
