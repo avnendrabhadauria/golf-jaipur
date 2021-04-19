@@ -6,6 +6,7 @@ const blackLight = '#000000DE';
 const DavyGrey = '#333333';
 
 const greyMain = '#f7f8f8';
+const semiGrey = '#f7f7f8';
 const greyDark = '#e4e5e5';
 const boxShadow = '#777777';
 
@@ -36,6 +37,7 @@ const googleGreen = 'rgba(60, 186, 84, 0.7)';
 const otcGray = 'rgba(164, 164, 164, 0.7)';
 
 const palette = {
+  semiGrey,
   black,
   white,
   blackLight,

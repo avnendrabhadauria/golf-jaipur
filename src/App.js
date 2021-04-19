@@ -1,3 +1,4 @@
+import { About } from './components/About/Aboutus';
 import Header from './components/navigation/header/header';
 import OurOffers from './components/SericesOffered/Offfers';
 import React from 'react';
@@ -9,6 +10,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Header />
       <OurOffers />
+      <About />
     </ThemeProvider>
   );
 }
