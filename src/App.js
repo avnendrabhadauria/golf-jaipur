@@ -1,6 +1,7 @@
 import { About } from './components/About/Aboutus';
 import { Container } from '@material-ui/core';
 import { CssBaseline } from '@material-ui/core';
+import Footer from './components/Footer/Footer';
 import Header from './components/navigation/header/header';
 import OurOffers from './components/SericesOffered/Offfers';
 import React from 'react';
@@ -18,6 +19,7 @@ function App() {
         <About />
         <UpcomingEvents />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
