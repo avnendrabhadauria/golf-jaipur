@@ -4,7 +4,6 @@ import About from './About';
 import Contacts from './Contacts';
 import QuickLink from './QuickLink';
 import React from 'react';
-import { findByLabelText } from '@testing-library/react';
 
 const useStyles = makeStyles((theme) => ({
   gridmain: {
