@@ -10,6 +10,8 @@ import Popper from '@material-ui/core/Popper';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
+// import CardMembershipTwoToneIcon from '@mui/icons-material/CardMembershipTwoTone';
+
 // import theme from '../../../theme/theme';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,9 +26,15 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     color: theme.palette.DavyGrey,
+    fontFamily: 'Oswald sans-serif',
+    fontSize: '16px',
+    letterSpacing: '0.1em',
     '&:hover': {
       color: theme.palette.primary.main,
-      background: theme.palette.primary.light,
+      background: theme.palette.white,
+    },
+    '& .MuiButton-startIcon': {
+      color: theme.palette.googleGreen,
     },
   },
   itmes: {
@@ -42,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MenuListComposition({ name = 'EVENTS' }) {
+export default function MenuListComposition({ name = 'EVENTS', icon = <></> }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -91,6 +99,7 @@ export default function MenuListComposition({ name = 'EVENTS' }) {
           aria-haspopup="true"
           onClick={handleToggle}
           className={classes.btn}
+          startIcon={icon}
         >
           {name2}
         </Button>

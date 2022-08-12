@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 0,
   },
   border: {
-    width: '97%',
-    margin: 'auto',
+    width: '100%',
+    padding: '1% 0 0 0',
     borderBottom: `2px solid ${theme.palette.boxShadow}`,
     display: 'flex',
     justifyContent: 'space-between',
@@ -38,6 +38,13 @@ const useStyles = makeStyles((theme) => ({
     'flex-direction': 'column',
 
     margin: '1% 0',
+  },
+  header: {
+    'font-size': '4em',
+    textTransform: 'uppercase',
+    '@media(minWidth: 780px)': {
+      width: '80%',
+    },
   },
 }));
 function Header(props) {
@@ -91,14 +98,8 @@ function Header(props) {
                     'align-items': 'center',
                   }}
                 >
-                  <h1
-                    style={{
-                      'font-size': '4em',
-
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    Welcome to Army Golf
+                  <h1 className={classes.header}>
+                    Welcome to SHAPTA SHAKTI GREENS
                   </h1>
                   <p style={{ textAlign: 'center', lineHeight: '35px' }}>
                     Known as a sport of leisure and as a gentleman’s game, golf

@@ -49,7 +49,7 @@ function UpcomingEvents() {
       >
         <Event
           backgroudImage={event1}
-          heading="GLOBAL CHAMPIONSHIP"
+          heading="MONTHLY CHAMPIONSHIP"
           date=" September 12-15"
         />
         <Event

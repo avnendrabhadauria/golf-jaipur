@@ -46,11 +46,11 @@ export default function Address(props) {
     <div style={{ display: 'flex', padding: '10px' }}>
       <MediaControlCard
         childComponent={<PhoneIcon />}
-        addressDetails="1-800-1234-567"
+        addressDetails="x-xxx-xxxx-xxx"
       />
       <MediaControlCard
         childComponent={<LocationOnIcon />}
-        addressDetails="SBh Road, Near Lal Bagh, Jaipur"
+        addressDetails="Military Station,Jaipur"
       />
     </div>
   );
